@@ -33,36 +33,36 @@
 00024 
 00027 <span class="keyword">namespace </span>DL
 00028 {
-<a name="l00029"></a><a class="code" href="classDL_1_1DelegateList.html">00029</a>         <span class="keyword">class </span><a class="code" href="classDL_1_1DelegateList.html">DelegateList</a>
-00030         {
-00031           <span class="keyword">public</span>:
-<a name="l00032"></a><a class="code" href="classDL_1_1DelegateList.html#a0">00032</a>           <span class="keyword">virtual</span> <a class="code" href="classDL_1_1DelegateList.html#a0">~DelegateList</a>()
-00033           {
-00034             <a class="code" href="namespacestdext.html#a0">stdext::foreach</a>( <a class="code" href="classDL_1_1DelegateList.html#r0">m_obj_list</a> , std::ptr_fun(<span class="keyword">operator</span> <span class="keyword">delete</span>) );
-00035           }
-<a name="l00036"></a><a class="code" href="classDL_1_1DelegateList.html#a1">00036</a>           <span class="keywordtype">void</span> <a class="code" href="classDL_1_1DelegateList.html#a1">add</a>(DelegateObj  m_obj)
-00037           { 
-00038              <a class="code" href="classDL_1_1DelegateList.html#r0">m_obj_list</a>.push_back(m_obj.release()); 
-00039           }
-<a name="l00040"></a><a class="code" href="classDL_1_1DelegateList.html#a2">00040</a>           <span class="keywordtype">void</span> <a class="code" href="classDL_1_1DelegateList.html#a2">reverse_call</a>()
-00041           {
-00042             <a class="code" href="namespacestdext.html#a1">stdext::foreach_reverse</a>(<a class="code" href="classDL_1_1DelegateList.html#r0">m_obj_list</a>, std::mem_fun(&amp;DelegateBase::Invoke));
-00043           }
-<a name="l00044"></a><a class="code" href="classDL_1_1DelegateList.html#a3">00044</a>           <span class="keywordtype">void</span> <a class="code" href="classDL_1_1DelegateList.html#a3">call</a>()
-00045           {
-00046              <a class="code" href="namespacestdext.html#a0">stdext::foreach</a>(<a class="code" href="classDL_1_1DelegateList.html#r0">m_obj_list</a> ,std::mem_fun(&amp;DelegateBase::Invoke));  
-00047           }
-<a name="l00050"></a><a class="code" href="classDL_1_1DelegateList.html#a4">00050</a>           <span class="keywordtype">void</span> <a class="code" href="classDL_1_1DelegateList.html#a4">operator()</a>()
-00051           {  
-00052             <a class="code" href="namespacestdext.html#a0">stdext::foreach</a>( <a class="code" href="classDL_1_1DelegateList.html#r0">m_obj_list</a> , std::mem_fun(&amp;DelegateBase::Invoke));
-00053           }  
-00054           <span class="keyword">private</span>:
-<a name="l00055"></a><a class="code" href="classDL_1_1DelegateList.html#r0">00055</a>           std::deque&lt;DelegateBase*&gt; <a class="code" href="classDL_1_1DelegateList.html#r0">m_obj_list</a>;
-00056         };
+<a name="l00029"></a><a class="code" href="classDL_1_1DelegateList.html">00029</a>   <span class="keyword">class </span><a class="code" href="classDL_1_1DelegateList.html">DelegateList</a>
+00030   {
+00031     <span class="keyword">public</span>:
+<a name="l00032"></a><a class="code" href="classDL_1_1DelegateList.html#a0">00032</a>     <span class="keyword">virtual</span> <a class="code" href="classDL_1_1DelegateList.html#a0">~DelegateList</a>()
+00033     {
+00034       <a class="code" href="namespacestdext.html#a0">stdext::foreach</a>( <a class="code" href="classDL_1_1DelegateList.html#r0">m_obj_list</a> , std::ptr_fun(<span class="keyword">operator</span> <span class="keyword">delete</span>) );
+00035     }
+<a name="l00036"></a><a class="code" href="classDL_1_1DelegateList.html#a1">00036</a>     <span class="keywordtype">void</span> <a class="code" href="classDL_1_1DelegateList.html#a1">add</a>(DelegateObj  m_obj)
+00037     { 
+00038        <a class="code" href="classDL_1_1DelegateList.html#r0">m_obj_list</a>.push_back(m_obj.release()); 
+00039     }
+<a name="l00040"></a><a class="code" href="classDL_1_1DelegateList.html#a2">00040</a>     <span class="keywordtype">void</span> <a class="code" href="classDL_1_1DelegateList.html#a2">reverse_call</a>()
+00041     {
+00042       <a class="code" href="namespacestdext.html#a1">stdext::foreach_reverse</a>(<a class="code" href="classDL_1_1DelegateList.html#r0">m_obj_list</a>, std::mem_fun(&amp;DelegateBase::Invoke));
+00043     }
+<a name="l00044"></a><a class="code" href="classDL_1_1DelegateList.html#a3">00044</a>     <span class="keywordtype">void</span> <a class="code" href="classDL_1_1DelegateList.html#a3">call</a>()
+00045     {
+00046        <a class="code" href="namespacestdext.html#a0">stdext::foreach</a>(<a class="code" href="classDL_1_1DelegateList.html#r0">m_obj_list</a> ,std::mem_fun(&amp;DelegateBase::Invoke));  
+00047     }
+<a name="l00050"></a><a class="code" href="classDL_1_1DelegateList.html#a4">00050</a>     <span class="keywordtype">void</span> <a class="code" href="classDL_1_1DelegateList.html#a4">operator()</a>()
+00051     {  
+00052       <a class="code" href="namespacestdext.html#a0">stdext::foreach</a>( <a class="code" href="classDL_1_1DelegateList.html#r0">m_obj_list</a> , std::mem_fun(&amp;DelegateBase::Invoke));
+00053     }  
+00054     <span class="keyword">private</span>:
+<a name="l00055"></a><a class="code" href="classDL_1_1DelegateList.html#r0">00055</a>     std::deque&lt;DelegateBase*&gt; <a class="code" href="classDL_1_1DelegateList.html#r0">m_obj_list</a>;
+00056   };
 00057 } <span class="comment">// namespace DL</span>
 00058 
 00059 <span class="preprocessor">#endif // GUARD_DELEGATE_LIST_HPP_INCLUDED</span>
-</pre></div><hr size="1"><address style="align: right;"><small>Generated on Sat Mar 12 11:38:09 2005 for Extended C++ Callback Library by&nbsp;
+</pre></div><hr size="1"><address style="align: right;"><small>Generated on Sun Mar 13 12:38:58 2005 for Extended C++ Callback Library by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.4.1 </small></address>
 </body>

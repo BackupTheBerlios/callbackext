@@ -26,9 +26,13 @@ Inheritance diagram for DL::Delegate9&lt; ReturnType, ClassType, Param1, Param2,
 
 <tr><td class="memItemLeft" nowrap align="right" valign="top">virtual&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDL_1_1Delegate9.html#a1">~Delegate9</a> ()</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDL_1_1Delegate9.html#a2">Invoke</a> ()</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">ReturnType&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDL_1_1Delegate9.html#a2">operator()</a> (Param1 val1, Param2 val2, Param3 val3, Param4 val4, Param5 val5, Param6 val6, Param7 val7, Param8 val8, Param9 val9)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDL_1_1Delegate9.html#a3">Invoke</a> (Param1 val1, Param2 val2, Param3 val3, Param4 val4, Param5 val5, Param6 val6, Param7 val7, Param8 val8, Param9 val9)</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDL_1_1Delegate9.html#a3">operator()</a> ()</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDL_1_1Delegate9.html#a4">Invoke</a> ()</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDL_1_1Delegate9.html#a5">Invoke</a> (Param1 val1, Param2 val2, Param3 val3, Param4 val4, Param5 val5, Param6 val6, Param7 val7, Param8 val8, Param9 val9)</td></tr>
 
 <tr><td colspan="2"><br><h2>Private Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDL_1_1Delegate9.html#d0">Delegate9</a> ()</td></tr>
@@ -61,7 +65,7 @@ Inheritance diagram for DL::Delegate9&lt; ReturnType, ClassType, Param1, Param2,
 <h3>template&lt;class ReturnType, class ClassType, class Param1, class Param2, class Param3, class Param4, class Param5, class Param6, class Param7, class Param8, class Param9&gt;<br>
  class DL::Delegate9&lt; ReturnType, ClassType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9 &gt;</h3>
 
-Delegate for 9 Param
+Delegate for 9 Param 
 <p>
 
 <p>
@@ -232,7 +236,7 @@ Definition at line <a class="el" href="Delegate9_8hpp-source.html#l00071">71</a>
   </tr>
 </table>
 <hr><h2>Member Function Documentation</h2>
-<a class="anchor" name="a3" doxytag="DL::Delegate9::Invoke"></a><p>
+<a class="anchor" name="a5" doxytag="DL::Delegate9::Invoke"></a><p>
 <table class="mdTable" cellpadding="2" cellspacing="0">
   <tr>
     <td class="mdRow">
@@ -314,12 +318,12 @@ template&lt;class ReturnType, class ClassType, class Param1, class Param2, class
 <p>
 
 <p>
-Definition at line <a class="el" href="Delegate9_8hpp-source.html#l00076">76</a> of file <a class="el" href="Delegate9_8hpp-source.html">Delegate9.hpp</a>.
+Definition at line <a class="el" href="Delegate9_8hpp-source.html#l00084">84</a> of file <a class="el" href="Delegate9_8hpp-source.html">Delegate9.hpp</a>.
 <p>
 References <a class="el" href="Delegate9_8hpp-source.html#l00042">DL::Delegate9&lt; ReturnType, ClassType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9 &gt;::m_class_obj</a>, and <a class="el" href="classDL_1_1Delegate9.html#r1">DL::Delegate9&lt; ReturnType, ClassType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9 &gt;::m_method</a>.    </td>
   </tr>
 </table>
-<a class="anchor" name="a2" doxytag="DL::Delegate9::Invoke"></a><p>
+<a class="anchor" name="a4" doxytag="DL::Delegate9::Invoke"></a><p>
 <table class="mdTable" cellpadding="2" cellspacing="0">
   <tr>
     <td class="mdRow">
@@ -349,13 +353,151 @@ template&lt;class ReturnType, class ClassType, class Param1, class Param2, class
 <p>
 
 <p>
+Implements <a class="el" href="classDL_1_1DelegateBase.html#a3">DL::DelegateBase</a>.
+<p>
+Definition at line <a class="el" href="Delegate9_8hpp-source.html#l00080">80</a> of file <a class="el" href="Delegate9_8hpp-source.html">Delegate9.hpp</a>.
+<p>
+References <a class="el" href="Delegate9_8hpp-source.html#l00042">DL::Delegate9&lt; ReturnType, ClassType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9 &gt;::m_class_obj</a>, <a class="el" href="classDL_1_1Delegate9.html#r1">DL::Delegate9&lt; ReturnType, ClassType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9 &gt;::m_method</a>, <a class="el" href="Delegate9_8hpp-source.html#l00044">DL::Delegate9&lt; ReturnType, ClassType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9 &gt;::m_val1</a>, <a class="el" href="Delegate9_8hpp-source.html#l00045">DL::Delegate9&lt; ReturnType, ClassType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9 &gt;::m_val2</a>, <a class="el" href="Delegate9_8hpp-source.html#l00046">DL::Delegate9&lt; ReturnType, ClassType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9 &gt;::m_val3</a>, <a class="el" href="Delegate9_8hpp-source.html#l00047">DL::Delegate9&lt; ReturnType, ClassType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9 &gt;::m_val4</a>, <a class="el" href="Delegate9_8hpp-source.html#l00048">DL::Delegate9&lt; ReturnType, ClassType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9 &gt;::m_val5</a>, <a class="el" href="Delegate9_8hpp-source.html#l00049">DL::Delegate9&lt; ReturnType, ClassType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9 &gt;::m_val6</a>, <a class="el" href="Delegate9_8hpp-source.html#l00050">DL::Delegate9&lt; ReturnType, ClassType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9 &gt;::m_val7</a>, <a class="el" href="Delegate9_8hpp-source.html#l00051">DL::Delegate9&lt; ReturnType, ClassType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9 &gt;::m_val8</a>, and <a class="el" href="Delegate9_8hpp-source.html#l00052">DL::Delegate9&lt; ReturnType, ClassType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9 &gt;::m_val9</a>.
+<p>
+Referenced by <a class="el" href="Delegate9_8hpp-source.html#l00072">DL::Delegate9&lt; ReturnType, ClassType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9 &gt;::operator()()</a>.    </td>
+  </tr>
+</table>
+<a class="anchor" name="a3" doxytag="DL::Delegate9::operator()"></a><p>
+<table class="mdTable" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="mdPrefix" colspan="4">
+template&lt;class ReturnType, class ClassType, class Param1, class Param2, class Param3, class Param4, class Param5, class Param6, class Param7, class Param8, class Param9&gt; </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap valign="top">void <a class="el" href="classDL_1_1Delegate9.html">DL::Delegate9</a>&lt; ReturnType, ClassType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9 &gt;::operator()           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap><code> [inline, virtual]</code></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing="5" cellpadding="0" border="0">
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+
+<p>
 Implements <a class="el" href="classDL_1_1DelegateBase.html#a2">DL::DelegateBase</a>.
+<p>
+Definition at line <a class="el" href="Delegate9_8hpp-source.html#l00076">76</a> of file <a class="el" href="Delegate9_8hpp-source.html">Delegate9.hpp</a>.
+<p>
+References <a class="el" href="Delegate9_8hpp-source.html#l00080">DL::Delegate9&lt; ReturnType, ClassType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9 &gt;::Invoke()</a>.    </td>
+  </tr>
+</table>
+
+<p>
+Here is the call graph for this function:<p><center><img src="classDL_1_1Delegate9_a3_cgraph.png" border="0" usemap="#classDL_1_1Delegate9_a3_cgraph_map" alt=""></center>
+<map name="classDL_1_1Delegate9_a3_cgraph_map">
+<area href="classDL_1_1Delegate9.html#a4" shape="rect" coords="230,8,382,32" alt="">
+</map>
+<a class="anchor" name="a2" doxytag="DL::Delegate9::operator()"></a><p>
+<table class="mdTable" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="mdPrefix" colspan="4">
+template&lt;class ReturnType, class ClassType, class Param1, class Param2, class Param3, class Param4, class Param5, class Param6, class Param7, class Param8, class Param9&gt; </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap valign="top">ReturnType <a class="el" href="classDL_1_1Delegate9.html">DL::Delegate9</a>&lt; ReturnType, ClassType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9 &gt;::operator()           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">Param1&nbsp;</td>
+          <td class="mdname" nowrap> <em>val1</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td class="md"></td>
+          <td class="md" nowrap>Param2&nbsp;</td>
+          <td class="mdname" nowrap> <em>val2</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td class="md"></td>
+          <td class="md" nowrap>Param3&nbsp;</td>
+          <td class="mdname" nowrap> <em>val3</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td class="md"></td>
+          <td class="md" nowrap>Param4&nbsp;</td>
+          <td class="mdname" nowrap> <em>val4</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td class="md"></td>
+          <td class="md" nowrap>Param5&nbsp;</td>
+          <td class="mdname" nowrap> <em>val5</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td class="md"></td>
+          <td class="md" nowrap>Param6&nbsp;</td>
+          <td class="mdname" nowrap> <em>val6</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td class="md"></td>
+          <td class="md" nowrap>Param7&nbsp;</td>
+          <td class="mdname" nowrap> <em>val7</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td class="md"></td>
+          <td class="md" nowrap>Param8&nbsp;</td>
+          <td class="mdname" nowrap> <em>val8</em>, </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap align="right"></td>
+          <td class="md"></td>
+          <td class="md" nowrap>Param9&nbsp;</td>
+          <td class="mdname" nowrap> <em>val9</em></td>
+        </tr>
+        <tr>
+          <td class="md"></td>
+          <td class="md">)&nbsp;</td>
+          <td class="md" colspan="2"><code> [inline]</code></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing="5" cellpadding="0" border="0">
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+
 <p>
 Definition at line <a class="el" href="Delegate9_8hpp-source.html#l00072">72</a> of file <a class="el" href="Delegate9_8hpp-source.html">Delegate9.hpp</a>.
 <p>
-References <a class="el" href="Delegate9_8hpp-source.html#l00042">DL::Delegate9&lt; ReturnType, ClassType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9 &gt;::m_class_obj</a>, <a class="el" href="classDL_1_1Delegate9.html#r1">DL::Delegate9&lt; ReturnType, ClassType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9 &gt;::m_method</a>, <a class="el" href="Delegate9_8hpp-source.html#l00044">DL::Delegate9&lt; ReturnType, ClassType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9 &gt;::m_val1</a>, <a class="el" href="Delegate9_8hpp-source.html#l00045">DL::Delegate9&lt; ReturnType, ClassType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9 &gt;::m_val2</a>, <a class="el" href="Delegate9_8hpp-source.html#l00046">DL::Delegate9&lt; ReturnType, ClassType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9 &gt;::m_val3</a>, <a class="el" href="Delegate9_8hpp-source.html#l00047">DL::Delegate9&lt; ReturnType, ClassType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9 &gt;::m_val4</a>, <a class="el" href="Delegate9_8hpp-source.html#l00048">DL::Delegate9&lt; ReturnType, ClassType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9 &gt;::m_val5</a>, <a class="el" href="Delegate9_8hpp-source.html#l00049">DL::Delegate9&lt; ReturnType, ClassType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9 &gt;::m_val6</a>, <a class="el" href="Delegate9_8hpp-source.html#l00050">DL::Delegate9&lt; ReturnType, ClassType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9 &gt;::m_val7</a>, <a class="el" href="Delegate9_8hpp-source.html#l00051">DL::Delegate9&lt; ReturnType, ClassType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9 &gt;::m_val8</a>, and <a class="el" href="Delegate9_8hpp-source.html#l00052">DL::Delegate9&lt; ReturnType, ClassType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9 &gt;::m_val9</a>.    </td>
+References <a class="el" href="Delegate9_8hpp-source.html#l00080">DL::Delegate9&lt; ReturnType, ClassType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9 &gt;::Invoke()</a>.    </td>
   </tr>
 </table>
+
+<p>
+Here is the call graph for this function:<p><center><img src="classDL_1_1Delegate9_a2_cgraph.png" border="0" usemap="#classDL_1_1Delegate9_a2_cgraph_map" alt=""></center>
+<map name="classDL_1_1Delegate9_a2_cgraph_map">
+<area href="classDL_1_1Delegate9.html#a4" shape="rect" coords="230,8,382,32" alt="">
+</map>
 <hr><h2>Member Data Documentation</h2>
 <a class="anchor" name="r0" doxytag="DL::Delegate9::m_class_obj"></a><p>
 <table class="mdTable" cellpadding="2" cellspacing="0">
@@ -385,7 +527,7 @@ template&lt;class ReturnType, class ClassType, class Param1, class Param2, class
 <p>
 Definition at line <a class="el" href="Delegate9_8hpp-source.html#l00042">42</a> of file <a class="el" href="Delegate9_8hpp-source.html">Delegate9.hpp</a>.
 <p>
-Referenced by <a class="el" href="Delegate9_8hpp-source.html#l00055">DL::Delegate9&lt; ReturnType, ClassType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9 &gt;::Delegate9()</a>, and <a class="el" href="Delegate9_8hpp-source.html#l00072">DL::Delegate9&lt; ReturnType, ClassType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9 &gt;::Invoke()</a>.    </td>
+Referenced by <a class="el" href="Delegate9_8hpp-source.html#l00055">DL::Delegate9&lt; ReturnType, ClassType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9 &gt;::Delegate9()</a>, and <a class="el" href="Delegate9_8hpp-source.html#l00080">DL::Delegate9&lt; ReturnType, ClassType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9 &gt;::Invoke()</a>.    </td>
   </tr>
 </table>
 <a class="anchor" name="r1" doxytag="DL::Delegate9::m_method"></a><p>
@@ -414,7 +556,7 @@ template&lt;class ReturnType, class ClassType, class Param1, class Param2, class
 <p>
 
 <p>
-Referenced by <a class="el" href="Delegate9_8hpp-source.html#l00055">DL::Delegate9&lt; ReturnType, ClassType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9 &gt;::Delegate9()</a>, and <a class="el" href="Delegate9_8hpp-source.html#l00072">DL::Delegate9&lt; ReturnType, ClassType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9 &gt;::Invoke()</a>.    </td>
+Referenced by <a class="el" href="Delegate9_8hpp-source.html#l00055">DL::Delegate9&lt; ReturnType, ClassType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9 &gt;::Delegate9()</a>, and <a class="el" href="Delegate9_8hpp-source.html#l00080">DL::Delegate9&lt; ReturnType, ClassType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9 &gt;::Invoke()</a>.    </td>
   </tr>
 </table>
 <a class="anchor" name="r2" doxytag="DL::Delegate9::m_val1"></a><p>
@@ -445,7 +587,7 @@ template&lt;class ReturnType, class ClassType, class Param1, class Param2, class
 <p>
 Definition at line <a class="el" href="Delegate9_8hpp-source.html#l00044">44</a> of file <a class="el" href="Delegate9_8hpp-source.html">Delegate9.hpp</a>.
 <p>
-Referenced by <a class="el" href="Delegate9_8hpp-source.html#l00055">DL::Delegate9&lt; ReturnType, ClassType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9 &gt;::Delegate9()</a>, and <a class="el" href="Delegate9_8hpp-source.html#l00072">DL::Delegate9&lt; ReturnType, ClassType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9 &gt;::Invoke()</a>.    </td>
+Referenced by <a class="el" href="Delegate9_8hpp-source.html#l00055">DL::Delegate9&lt; ReturnType, ClassType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9 &gt;::Delegate9()</a>, and <a class="el" href="Delegate9_8hpp-source.html#l00080">DL::Delegate9&lt; ReturnType, ClassType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9 &gt;::Invoke()</a>.    </td>
   </tr>
 </table>
 <a class="anchor" name="r3" doxytag="DL::Delegate9::m_val2"></a><p>
@@ -476,7 +618,7 @@ template&lt;class ReturnType, class ClassType, class Param1, class Param2, class
 <p>
 Definition at line <a class="el" href="Delegate9_8hpp-source.html#l00045">45</a> of file <a class="el" href="Delegate9_8hpp-source.html">Delegate9.hpp</a>.
 <p>
-Referenced by <a class="el" href="Delegate9_8hpp-source.html#l00055">DL::Delegate9&lt; ReturnType, ClassType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9 &gt;::Delegate9()</a>, and <a class="el" href="Delegate9_8hpp-source.html#l00072">DL::Delegate9&lt; ReturnType, ClassType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9 &gt;::Invoke()</a>.    </td>
+Referenced by <a class="el" href="Delegate9_8hpp-source.html#l00055">DL::Delegate9&lt; ReturnType, ClassType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9 &gt;::Delegate9()</a>, and <a class="el" href="Delegate9_8hpp-source.html#l00080">DL::Delegate9&lt; ReturnType, ClassType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9 &gt;::Invoke()</a>.    </td>
   </tr>
 </table>
 <a class="anchor" name="r4" doxytag="DL::Delegate9::m_val3"></a><p>
@@ -507,7 +649,7 @@ template&lt;class ReturnType, class ClassType, class Param1, class Param2, class
 <p>
 Definition at line <a class="el" href="Delegate9_8hpp-source.html#l00046">46</a> of file <a class="el" href="Delegate9_8hpp-source.html">Delegate9.hpp</a>.
 <p>
-Referenced by <a class="el" href="Delegate9_8hpp-source.html#l00055">DL::Delegate9&lt; ReturnType, ClassType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9 &gt;::Delegate9()</a>, and <a class="el" href="Delegate9_8hpp-source.html#l00072">DL::Delegate9&lt; ReturnType, ClassType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9 &gt;::Invoke()</a>.    </td>
+Referenced by <a class="el" href="Delegate9_8hpp-source.html#l00055">DL::Delegate9&lt; ReturnType, ClassType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9 &gt;::Delegate9()</a>, and <a class="el" href="Delegate9_8hpp-source.html#l00080">DL::Delegate9&lt; ReturnType, ClassType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9 &gt;::Invoke()</a>.    </td>
   </tr>
 </table>
 <a class="anchor" name="r5" doxytag="DL::Delegate9::m_val4"></a><p>
@@ -538,7 +680,7 @@ template&lt;class ReturnType, class ClassType, class Param1, class Param2, class
 <p>
 Definition at line <a class="el" href="Delegate9_8hpp-source.html#l00047">47</a> of file <a class="el" href="Delegate9_8hpp-source.html">Delegate9.hpp</a>.
 <p>
-Referenced by <a class="el" href="Delegate9_8hpp-source.html#l00055">DL::Delegate9&lt; ReturnType, ClassType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9 &gt;::Delegate9()</a>, and <a class="el" href="Delegate9_8hpp-source.html#l00072">DL::Delegate9&lt; ReturnType, ClassType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9 &gt;::Invoke()</a>.    </td>
+Referenced by <a class="el" href="Delegate9_8hpp-source.html#l00055">DL::Delegate9&lt; ReturnType, ClassType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9 &gt;::Delegate9()</a>, and <a class="el" href="Delegate9_8hpp-source.html#l00080">DL::Delegate9&lt; ReturnType, ClassType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9 &gt;::Invoke()</a>.    </td>
   </tr>
 </table>
 <a class="anchor" name="r6" doxytag="DL::Delegate9::m_val5"></a><p>
@@ -569,7 +711,7 @@ template&lt;class ReturnType, class ClassType, class Param1, class Param2, class
 <p>
 Definition at line <a class="el" href="Delegate9_8hpp-source.html#l00048">48</a> of file <a class="el" href="Delegate9_8hpp-source.html">Delegate9.hpp</a>.
 <p>
-Referenced by <a class="el" href="Delegate9_8hpp-source.html#l00055">DL::Delegate9&lt; ReturnType, ClassType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9 &gt;::Delegate9()</a>, and <a class="el" href="Delegate9_8hpp-source.html#l00072">DL::Delegate9&lt; ReturnType, ClassType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9 &gt;::Invoke()</a>.    </td>
+Referenced by <a class="el" href="Delegate9_8hpp-source.html#l00055">DL::Delegate9&lt; ReturnType, ClassType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9 &gt;::Delegate9()</a>, and <a class="el" href="Delegate9_8hpp-source.html#l00080">DL::Delegate9&lt; ReturnType, ClassType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9 &gt;::Invoke()</a>.    </td>
   </tr>
 </table>
 <a class="anchor" name="r7" doxytag="DL::Delegate9::m_val6"></a><p>
@@ -600,7 +742,7 @@ template&lt;class ReturnType, class ClassType, class Param1, class Param2, class
 <p>
 Definition at line <a class="el" href="Delegate9_8hpp-source.html#l00049">49</a> of file <a class="el" href="Delegate9_8hpp-source.html">Delegate9.hpp</a>.
 <p>
-Referenced by <a class="el" href="Delegate9_8hpp-source.html#l00055">DL::Delegate9&lt; ReturnType, ClassType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9 &gt;::Delegate9()</a>, and <a class="el" href="Delegate9_8hpp-source.html#l00072">DL::Delegate9&lt; ReturnType, ClassType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9 &gt;::Invoke()</a>.    </td>
+Referenced by <a class="el" href="Delegate9_8hpp-source.html#l00055">DL::Delegate9&lt; ReturnType, ClassType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9 &gt;::Delegate9()</a>, and <a class="el" href="Delegate9_8hpp-source.html#l00080">DL::Delegate9&lt; ReturnType, ClassType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9 &gt;::Invoke()</a>.    </td>
   </tr>
 </table>
 <a class="anchor" name="r8" doxytag="DL::Delegate9::m_val7"></a><p>
@@ -631,7 +773,7 @@ template&lt;class ReturnType, class ClassType, class Param1, class Param2, class
 <p>
 Definition at line <a class="el" href="Delegate9_8hpp-source.html#l00050">50</a> of file <a class="el" href="Delegate9_8hpp-source.html">Delegate9.hpp</a>.
 <p>
-Referenced by <a class="el" href="Delegate9_8hpp-source.html#l00055">DL::Delegate9&lt; ReturnType, ClassType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9 &gt;::Delegate9()</a>, and <a class="el" href="Delegate9_8hpp-source.html#l00072">DL::Delegate9&lt; ReturnType, ClassType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9 &gt;::Invoke()</a>.    </td>
+Referenced by <a class="el" href="Delegate9_8hpp-source.html#l00055">DL::Delegate9&lt; ReturnType, ClassType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9 &gt;::Delegate9()</a>, and <a class="el" href="Delegate9_8hpp-source.html#l00080">DL::Delegate9&lt; ReturnType, ClassType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9 &gt;::Invoke()</a>.    </td>
   </tr>
 </table>
 <a class="anchor" name="r9" doxytag="DL::Delegate9::m_val8"></a><p>
@@ -662,7 +804,7 @@ template&lt;class ReturnType, class ClassType, class Param1, class Param2, class
 <p>
 Definition at line <a class="el" href="Delegate9_8hpp-source.html#l00051">51</a> of file <a class="el" href="Delegate9_8hpp-source.html">Delegate9.hpp</a>.
 <p>
-Referenced by <a class="el" href="Delegate9_8hpp-source.html#l00055">DL::Delegate9&lt; ReturnType, ClassType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9 &gt;::Delegate9()</a>, and <a class="el" href="Delegate9_8hpp-source.html#l00072">DL::Delegate9&lt; ReturnType, ClassType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9 &gt;::Invoke()</a>.    </td>
+Referenced by <a class="el" href="Delegate9_8hpp-source.html#l00055">DL::Delegate9&lt; ReturnType, ClassType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9 &gt;::Delegate9()</a>, and <a class="el" href="Delegate9_8hpp-source.html#l00080">DL::Delegate9&lt; ReturnType, ClassType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9 &gt;::Invoke()</a>.    </td>
   </tr>
 </table>
 <a class="anchor" name="r10" doxytag="DL::Delegate9::m_val9"></a><p>
@@ -693,12 +835,12 @@ template&lt;class ReturnType, class ClassType, class Param1, class Param2, class
 <p>
 Definition at line <a class="el" href="Delegate9_8hpp-source.html#l00052">52</a> of file <a class="el" href="Delegate9_8hpp-source.html">Delegate9.hpp</a>.
 <p>
-Referenced by <a class="el" href="Delegate9_8hpp-source.html#l00055">DL::Delegate9&lt; ReturnType, ClassType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9 &gt;::Delegate9()</a>, and <a class="el" href="Delegate9_8hpp-source.html#l00072">DL::Delegate9&lt; ReturnType, ClassType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9 &gt;::Invoke()</a>.    </td>
+Referenced by <a class="el" href="Delegate9_8hpp-source.html#l00055">DL::Delegate9&lt; ReturnType, ClassType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9 &gt;::Delegate9()</a>, and <a class="el" href="Delegate9_8hpp-source.html#l00080">DL::Delegate9&lt; ReturnType, ClassType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9 &gt;::Invoke()</a>.    </td>
   </tr>
 </table>
 <hr>The documentation for this class was generated from the following file:<ul>
 <li>/data/callbackext/DelegateN/<a class="el" href="Delegate9_8hpp-source.html">Delegate9.hpp</a></ul>
-<hr size="1"><address style="align: right;"><small>Generated on Sat Mar 12 11:38:11 2005 for Extended C++ Callback Library by&nbsp;
+<hr size="1"><address style="align: right;"><small>Generated on Sun Mar 13 12:39:46 2005 for Extended C++ Callback Library by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.4.1 </small></address>
 </body>

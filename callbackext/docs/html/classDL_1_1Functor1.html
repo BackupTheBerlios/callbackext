@@ -26,9 +26,13 @@ Inheritance diagram for DL::Functor1&lt; ReturnType, Param1 &gt;:<p><center><img
 
 <tr><td class="memItemLeft" nowrap align="right" valign="top">virtual&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDL_1_1Functor1.html#a1">~Functor1</a> ()</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDL_1_1Functor1.html#a2">Invoke</a> ()</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDL_1_1Functor1.html#a2">operator()</a> ()</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top">ReturnType&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDL_1_1Functor1.html#a3">Invoke</a> (Param1 val1)</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">ReturnType&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDL_1_1Functor1.html#a3">operator()</a> (Param1 val1)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDL_1_1Functor1.html#a4">Invoke</a> ()</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">ReturnType&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDL_1_1Functor1.html#a5">Invoke</a> (Param1 val1)</td></tr>
 
 <tr><td colspan="2"><br><h2>Private Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDL_1_1Functor1.html#d0">Functor1</a> ()</td></tr>
@@ -43,7 +47,7 @@ Inheritance diagram for DL::Functor1&lt; ReturnType, Param1 &gt;:<p><center><img
 <h3>template&lt;class ReturnType, class Param1&gt;<br>
  class DL::Functor1&lt; ReturnType, Param1 &gt;</h3>
 
-Functor for 1 Param
+Functor for 1 Param 
 <p>
 
 <p>
@@ -160,7 +164,7 @@ Definition at line <a class="el" href="Functor1_8hpp-source.html#l00041">41</a> 
   </tr>
 </table>
 <hr><h2>Member Function Documentation</h2>
-<a class="anchor" name="a3" doxytag="DL::Functor1::Invoke"></a><p>
+<a class="anchor" name="a5" doxytag="DL::Functor1::Invoke"></a><p>
 <table class="mdTable" cellpadding="2" cellspacing="0">
   <tr>
     <td class="mdRow">
@@ -191,12 +195,12 @@ template&lt;class ReturnType, class Param1&gt; </td>
 <p>
 
 <p>
-Definition at line <a class="el" href="Functor1_8hpp-source.html#l00046">46</a> of file <a class="el" href="Functor1_8hpp-source.html">Functor1.hpp</a>.
+Definition at line <a class="el" href="Functor1_8hpp-source.html#l00054">54</a> of file <a class="el" href="Functor1_8hpp-source.html">Functor1.hpp</a>.
 <p>
 References <a class="el" href="classDL_1_1Functor1.html#r0">DL::Functor1&lt; ReturnType, Param1 &gt;::m_function</a>.    </td>
   </tr>
 </table>
-<a class="anchor" name="a2" doxytag="DL::Functor1::Invoke"></a><p>
+<a class="anchor" name="a4" doxytag="DL::Functor1::Invoke"></a><p>
 <table class="mdTable" cellpadding="2" cellspacing="0">
   <tr>
     <td class="mdRow">
@@ -207,6 +211,79 @@ template&lt;class ReturnType, class Param1&gt; </td>
         </tr>
         <tr>
           <td class="md" nowrap valign="top">void <a class="el" href="classDL_1_1Functor1.html">DL::Functor1</a>&lt; ReturnType, Param1 &gt;::Invoke           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap><code> [inline, virtual]</code></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing="5" cellpadding="0" border="0">
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+
+<p>
+Implements <a class="el" href="classDL_1_1DelegateBase.html#a3">DL::DelegateBase</a>.
+<p>
+Definition at line <a class="el" href="Functor1_8hpp-source.html#l00050">50</a> of file <a class="el" href="Functor1_8hpp-source.html">Functor1.hpp</a>.
+<p>
+References <a class="el" href="Functor1_8hpp-source.html#l00034">DL::Functor1&lt; ReturnType, Param1 &gt;::m_val1</a>.    </td>
+  </tr>
+</table>
+<a class="anchor" name="a3" doxytag="DL::Functor1::operator()"></a><p>
+<table class="mdTable" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="mdPrefix" colspan="4">
+template&lt;class ReturnType, class Param1&gt; </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap valign="top">ReturnType <a class="el" href="classDL_1_1Functor1.html">DL::Functor1</a>&lt; ReturnType, Param1 &gt;::operator()           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="md" nowrap valign="top">Param1&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap> <em>val1</em>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap><code> [inline]</code></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing="5" cellpadding="0" border="0">
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+
+<p>
+Definition at line <a class="el" href="Functor1_8hpp-source.html#l00046">46</a> of file <a class="el" href="Functor1_8hpp-source.html">Functor1.hpp</a>.
+<p>
+References <a class="el" href="classDL_1_1Functor1.html#r0">DL::Functor1&lt; ReturnType, Param1 &gt;::m_function</a>.    </td>
+  </tr>
+</table>
+<a class="anchor" name="a2" doxytag="DL::Functor1::operator()"></a><p>
+<table class="mdTable" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="mdPrefix" colspan="4">
+template&lt;class ReturnType, class Param1&gt; </td>
+        </tr>
+        <tr>
+          <td class="md" nowrap valign="top">void <a class="el" href="classDL_1_1Functor1.html">DL::Functor1</a>&lt; ReturnType, Param1 &gt;::operator()           </td>
           <td class="md" valign="top">(&nbsp;</td>
           <td class="mdname1" valign="top" nowrap>          </td>
           <td class="md" valign="top">&nbsp;)&nbsp;</td>
@@ -260,7 +337,7 @@ template&lt;class ReturnType, class Param1&gt; </td>
 <p>
 
 <p>
-Referenced by <a class="el" href="Functor1_8hpp-source.html#l00037">DL::Functor1&lt; ReturnType, Param1 &gt;::Functor1()</a>, and <a class="el" href="Functor1_8hpp-source.html#l00046">DL::Functor1&lt; ReturnType, Param1 &gt;::Invoke()</a>.    </td>
+Referenced by <a class="el" href="Functor1_8hpp-source.html#l00037">DL::Functor1&lt; ReturnType, Param1 &gt;::Functor1()</a>, <a class="el" href="Functor1_8hpp-source.html#l00054">DL::Functor1&lt; ReturnType, Param1 &gt;::Invoke()</a>, and <a class="el" href="Functor1_8hpp-source.html#l00046">DL::Functor1&lt; ReturnType, Param1 &gt;::operator()()</a>.    </td>
   </tr>
 </table>
 <a class="anchor" name="r1" doxytag="DL::Functor1::m_val1"></a><p>
@@ -291,12 +368,12 @@ template&lt;class ReturnType, class Param1&gt; </td>
 <p>
 Definition at line <a class="el" href="Functor1_8hpp-source.html#l00034">34</a> of file <a class="el" href="Functor1_8hpp-source.html">Functor1.hpp</a>.
 <p>
-Referenced by <a class="el" href="Functor1_8hpp-source.html#l00037">DL::Functor1&lt; ReturnType, Param1 &gt;::Functor1()</a>, and <a class="el" href="Functor1_8hpp-source.html#l00042">DL::Functor1&lt; ReturnType, Param1 &gt;::Invoke()</a>.    </td>
+Referenced by <a class="el" href="Functor1_8hpp-source.html#l00037">DL::Functor1&lt; ReturnType, Param1 &gt;::Functor1()</a>, <a class="el" href="Functor1_8hpp-source.html#l00050">DL::Functor1&lt; ReturnType, Param1 &gt;::Invoke()</a>, and <a class="el" href="Functor1_8hpp-source.html#l00042">DL::Functor1&lt; ReturnType, Param1 &gt;::operator()()</a>.    </td>
   </tr>
 </table>
 <hr>The documentation for this class was generated from the following file:<ul>
 <li>/data/callbackext/FunctorN/<a class="el" href="Functor1_8hpp-source.html">Functor1.hpp</a></ul>
-<hr size="1"><address style="align: right;"><small>Generated on Sat Mar 12 11:38:11 2005 for Extended C++ Callback Library by&nbsp;
+<hr size="1"><address style="align: right;"><small>Generated on Sun Mar 13 12:39:48 2005 for Extended C++ Callback Library by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.4.1 </small></address>
 </body>

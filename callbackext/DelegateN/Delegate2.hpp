@@ -47,13 +47,21 @@ namespace DL
     m_val1(val1),m_val2(val2)
     {}
   virtual ~Delegate2(){}
+  void operator()()
+  {
+  (*m_class_obj.*m_method)(m_val1,m_val2);
+    }    
+  ReturnType operator()(Param1 val1,Param2 val2)
+  {
+    return (*m_class_obj.*m_method)(val1,val2);
+  }
   void Invoke()
   {
   (*m_class_obj.*m_method)(m_val1,m_val2);
     }    
-  void Invoke(Param1 val1,Param2 val2)
+  ReturnType Invoke(Param1 val1,Param2 val2)
   {
-  (*m_class_obj.*m_method)(val1,val2);
+    return (*m_class_obj.*m_method)(val1,val2);
   }
   };
   

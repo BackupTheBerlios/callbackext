@@ -30,31 +30,35 @@
 00021 <span class="preprocessor">#include "../DelegateN/DelegateBase.hpp"</span>
 00022 
 00023 <span class="keyword">namespace </span>DL 
-00024 {       
-<a name="l00029"></a><a class="code" href="classDL_1_1Functor0.html">00029</a>         <span class="keyword">class </span><a class="code" href="classDL_1_1Functor0.html">Functor0</a> : <span class="keyword">public</span> <a class="code" href="classDL_1_1DelegateBase.html">DelegateBase</a> 
-00030         {
-00031         void (*<a class="code" href="classDL_1_1Functor0.html#r0">m_function</a>)(void);
-<a name="l00032"></a><a class="code" href="classDL_1_1Functor0.html#d0">00032</a>         <a class="code" href="classDL_1_1Functor0.html#d0">Functor0</a>(){}
-00033         <span class="keyword">public</span>:
-<a name="l00034"></a><a class="code" href="classDL_1_1Functor0.html#a0">00034</a>         <a class="code" href="classDL_1_1Functor0.html#d0">Functor0</a>(<span class="keywordtype">void</span> (*function)(<span class="keywordtype">void</span>)):
-00035                 <a class="code" href="classDL_1_1Functor0.html#r0">m_function</a>(function)
-00036                 {}
-<a name="l00037"></a><a class="code" href="classDL_1_1Functor0.html#a1">00037</a>         <span class="keyword">virtual</span> <a class="code" href="classDL_1_1Functor0.html#a1">~Functor0</a>(){}
-<a name="l00038"></a><a class="code" href="classDL_1_1Functor0.html#a2">00038</a>         <span class="keywordtype">void</span> <a class="code" href="classDL_1_1Functor0.html#a2">Invoke</a>()
-00039         {
-00040          (*m_function)();
-00041         }
-00042         };
-00043         
-00044         <span class="comment">//######################################################################################################</span>
-00045         
-<a name="l00046"></a><a class="code" href="namespaceDL.html#a23">00046</a>         <a class="code" href="namespaceDL.html#a0">DelegateObj</a> <a class="code" href="namespaceDL.html#a1">create_delegate</a>(<span class="keywordtype">void</span>(*Meth)(<span class="keywordtype">void</span>))
-00047         {
-00048           <span class="keywordflow">return</span> <a class="code" href="namespaceDL.html#a0">DelegateObj</a>(<span class="keyword">new</span> <a class="code" href="classDL_1_1Functor0.html">Functor0</a>(Meth));
-00049         }
-00050 } <span class="comment">// namespace DL</span>
-00051 <span class="preprocessor">#endif // GUARD_DELGATES_FUNCTOR0_HPP_INCLUDED</span>
-</pre></div><hr size="1"><address style="align: right;"><small>Generated on Sat Mar 12 11:38:09 2005 for Extended C++ Callback Library by&nbsp;
+00024   {
+<a name="l00029"></a><a class="code" href="classDL_1_1Functor0.html">00029</a>   <span class="keyword">class </span><a class="code" href="classDL_1_1Functor0.html">Functor0</a> : <span class="keyword">public</span> <a class="code" href="classDL_1_1DelegateBase.html">DelegateBase</a> 
+00030   {
+00031   void (*<a class="code" href="classDL_1_1Functor0.html#r0">m_function</a>)(void);
+<a name="l00032"></a><a class="code" href="classDL_1_1Functor0.html#d0">00032</a>   <a class="code" href="classDL_1_1Functor0.html#d0">Functor0</a>(){}
+00033   <span class="keyword">public</span>:
+<a name="l00034"></a><a class="code" href="classDL_1_1Functor0.html#a0">00034</a>   <a class="code" href="classDL_1_1Functor0.html#d0">Functor0</a>(<span class="keywordtype">void</span> (*function)(<span class="keywordtype">void</span>)):
+00035     <a class="code" href="classDL_1_1Functor0.html#r0">m_function</a>(function)
+00036     {}
+<a name="l00037"></a><a class="code" href="classDL_1_1Functor0.html#a1">00037</a>   <span class="keyword">virtual</span> <a class="code" href="classDL_1_1Functor0.html#a1">~Functor0</a>(){}
+<a name="l00038"></a><a class="code" href="classDL_1_1Functor0.html#a2">00038</a>   <span class="keywordtype">void</span> <a class="code" href="classDL_1_1Functor0.html#a2">operator()</a>()
+00039   {
+00040     this-&gt;<a class="code" href="classDL_1_1Functor0.html#a3">Invoke</a>();
+00041   }
+<a name="l00042"></a><a class="code" href="classDL_1_1Functor0.html#a3">00042</a>   <span class="keywordtype">void</span> <a class="code" href="classDL_1_1Functor0.html#a3">Invoke</a>()
+00043   {
+00044    (*m_function)();
+00045   }
+00046   };
+00047   
+00048   <span class="comment">//######################################################################################################</span>
+00049   
+<a name="l00050"></a><a class="code" href="namespaceDL.html#a23">00050</a>   <a class="code" href="namespaceDL.html#a0">DelegateObj</a> <a class="code" href="namespaceDL.html#a1">create_delegate</a>(<span class="keywordtype">void</span>(*Meth)(<span class="keywordtype">void</span>))
+00051   {
+00052     <span class="keywordflow">return</span> <a class="code" href="namespaceDL.html#a0">DelegateObj</a>(<span class="keyword">new</span> <a class="code" href="classDL_1_1Functor0.html">Functor0</a>(Meth));
+00053   }
+00054 } <span class="comment">// namespace DL</span>
+00055 <span class="preprocessor">#endif // GUARD_DELGATES_FUNCTOR0_HPP_INCLUDED</span>
+</pre></div><hr size="1"><address style="align: right;"><small>Generated on Sun Mar 13 12:38:58 2005 for Extended C++ Callback Library by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.4.1 </small></address>
 </body>

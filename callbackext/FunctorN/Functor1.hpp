@@ -39,6 +39,14 @@ namespace DL
     m_function(function),m_val1(val1)
     {}
   virtual ~Functor1(){}
+  void operator()()
+  {
+    (*m_function)(m_val1);
+  }
+  ReturnType operator()(Param1 val1)
+  {
+   return (*m_function)(val1);
+  }
   void Invoke()
   {
     (*m_function)(m_val1);

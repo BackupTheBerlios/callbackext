@@ -30,8 +30,8 @@ int main()
   Foo obj;
   DL::Connection con(DL::create_delegate(obj,&Foo::Print));
   con.emit();  
-  con.mute(true);
+  con.enable(false);
   con.emit();  
-  con.mute(false);
+  con.enable(true);
   con.emit();  
 }

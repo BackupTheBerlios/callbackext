@@ -59,13 +59,21 @@ namespace DL
     m_val4(val4),m_val5(val5),m_val6(val6)
     {}
   virtual ~Delegate6(){}
+  void operator()()
+  {
+  (*m_class_obj.*m_method)(m_val1,m_val2,m_val3,m_val4,m_val5,m_val6);
+  }
+  ReturnType operator()(Param1 val1,Param2 val2,Param3 val3,Param4 val4,Param5 val5,Param6 val6)
+  {
+    return (*m_class_obj.*m_method)(val1,val2,val3,val4,val5,val6);
+  }
   void Invoke()
   {
   (*m_class_obj.*m_method)(m_val1,m_val2,m_val3,m_val4,m_val5,m_val6);
   }
-  void Invoke(Param1 val1,Param2 val2,Param3 val3,Param4 val4,Param5 val5,Param6 val6)
+  ReturnType Invoke(Param1 val1,Param2 val2,Param3 val3,Param4 val4,Param5 val5,Param6 val6)
   {
-  (*m_class_obj.*m_method)(val1,val2,val3,val4,val5,val6);
+    return (*m_class_obj.*m_method)(val1,val2,val3,val4,val5,val6);
   }
   };
   

@@ -27,6 +27,7 @@ namespace DL
   public:  
         DelegateBase(){}
   virtual ~DelegateBase(){}
+  virtual void operator()() = 0;
   virtual void Invoke() = 0;
   };
   

@@ -43,11 +43,11 @@ namespace DL
       m_class_obj(class_obj), m_method(method),m_val1(val1)
       {}
     virtual ~Delegate1(){}
-    ReturnType operator(Param1 val1)
+    ReturnType operator()(Param1 val1)
     { 
       return this->Invoke(val1); 
     }
-    void operator()
+    void operator()()
     { 
       this->Invoke(); 
     }

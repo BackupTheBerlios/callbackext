@@ -30,40 +30,41 @@
 00021 <span class="preprocessor">#include "<a class="code" href="DelegateBase_8hpp.html">DelegateBase.hpp</a>"</span>
 00022 
 00023 <span class="keyword">namespace </span>DL 
-00024 {       
-00025         <span class="keyword">template</span> &lt;<span class="keyword">class</span> ReturnType, <span class="keyword">class</span> ClassType&gt;
-<a name="l00026"></a><a class="code" href="classDL_1_1Delegate0.html">00026</a>         <span class="keyword">class </span><a class="code" href="classDL_1_1Delegate0.html">Delegate0</a> : <span class="keyword">public</span> <a class="code" href="classDL_1_1DelegateBase.html">DelegateBase</a> 
-00027         {
-00028         <span class="comment">//Param1 m_val1;</span>
-<a name="l00029"></a><a class="code" href="classDL_1_1Delegate0.html#r0">00029</a>         ClassType* <a class="code" href="classDL_1_1Delegate0.html#r0">m_class_obj</a>;
-00030         ReturnType (ClassType::*m_method)();
-<a name="l00031"></a><a class="code" href="classDL_1_1Delegate0.html#d0">00031</a>         <a class="code" href="classDL_1_1Delegate0.html#d0">Delegate0</a>(){}
-00032         <span class="keyword">public</span>:
-<a name="l00033"></a><a class="code" href="classDL_1_1Delegate0.html#a0">00033</a>         <a class="code" href="classDL_1_1Delegate0.html#d0">Delegate0</a>(ClassType* class_obj,
-00034                 ReturnType (ClassType::*method)()):
-00035                 <a class="code" href="classDL_1_1Delegate0.html#r0">m_class_obj</a>(class_obj), <a class="code" href="classDL_1_1Delegate0.html#r1">m_method</a>(method)
-00036                 {}
-<a name="l00037"></a><a class="code" href="classDL_1_1Delegate0.html#a1">00037</a>         <span class="keyword">virtual</span> <a class="code" href="classDL_1_1Delegate0.html#a1">~Delegate0</a>(){}
-<a name="l00038"></a><a class="code" href="classDL_1_1Delegate0.html#a2">00038</a>         <span class="keywordtype">void</span> <a class="code" href="classDL_1_1Delegate0.html#a2">Invoke</a>()
-00039         {
-00040         (*<a class="code" href="classDL_1_1Delegate0.html#r0">m_class_obj</a>.*<a class="code" href="classDL_1_1Delegate0.html#r1">m_method</a>)();
-00041         }           
-00042         };
-00043         <span class="comment">//######################################################################################################</span>
-00044         <span class="keyword">template</span> &lt; <span class="keyword">class</span> ReturnType , <span class="keyword">class</span> ClassType&gt;
-<a name="l00045"></a><a class="code" href="namespaceDL.html#a1">00045</a>         <a class="code" href="namespaceDL.html#a0">DelegateObj</a> <a class="code" href="namespaceDL.html#a1">create_delegate</a>( ClassType &amp; obj , ReturnType(ClassType::*Meth)())
-00046         {
-00047           <span class="keywordflow">return</span> <a class="code" href="namespaceDL.html#a0">DelegateObj</a>(<span class="keyword">new</span> <a class="code" href="classDL_1_1Delegate0.html">Delegate0&lt;ReturnType,ClassType&gt;</a>(&amp;obj,Meth));
-00048         }
-00049         
-00050         <span class="keyword">template</span> &lt; <span class="keyword">class</span> ReturnType , <span class="keyword">class</span> ClassType&gt;
-<a name="l00051"></a><a class="code" href="namespaceDL.html#a2">00051</a>         <a class="code" href="namespaceDL.html#a0">DelegateObj</a> <a class="code" href="namespaceDL.html#a1">create_delegate</a>( ClassType * obj , ReturnType(ClassType::*Meth)())
-00052         {
-00053           <span class="keywordflow">return</span> <a class="code" href="namespaceDL.html#a0">DelegateObj</a>(<span class="keyword">new</span> <a class="code" href="classDL_1_1Delegate0.html">Delegate0&lt;ReturnType,ClassType&gt;</a>(obj,Meth));
-00054         }
-00055 } <span class="comment">// namespace DL</span>
-00056 <span class="preprocessor">#endif // GUARD_DELGATES_DELEGATE0_HPP_INCLUDED</span>
-</pre></div><hr size="1"><address style="align: right;"><small>Generated on Sat Mar 12 11:38:09 2005 for Extended C++ Callback Library by&nbsp;
+00024   {
+00025   <span class="keyword">template</span> &lt;<span class="keyword">class</span> ReturnType, <span class="keyword">class</span> ClassType&gt;
+<a name="l00026"></a><a class="code" href="classDL_1_1Delegate0.html">00026</a>     <span class="keyword">class </span><a class="code" href="classDL_1_1Delegate0.html">Delegate0</a> : <span class="keyword">public</span> <a class="code" href="classDL_1_1DelegateBase.html">DelegateBase</a> 
+00027     {
+00028     <span class="comment">//Param1 m_val1;</span>
+<a name="l00029"></a><a class="code" href="classDL_1_1Delegate0.html#r0">00029</a>     ClassType* <a class="code" href="classDL_1_1Delegate0.html#r0">m_class_obj</a>;
+00030     ReturnType (ClassType::*m_method)();
+<a name="l00031"></a><a class="code" href="classDL_1_1Delegate0.html#d0">00031</a>     <a class="code" href="classDL_1_1Delegate0.html#d0">Delegate0</a>(){}
+00032     <span class="keyword">public</span>:
+<a name="l00033"></a><a class="code" href="classDL_1_1Delegate0.html#a0">00033</a>     <a class="code" href="classDL_1_1Delegate0.html#d0">Delegate0</a>(ClassType* class_obj,
+00034       ReturnType (ClassType::*method)()):
+00035       <a class="code" href="classDL_1_1Delegate0.html#r0">m_class_obj</a>(class_obj), <a class="code" href="classDL_1_1Delegate0.html#r1">m_method</a>(method)
+00036       {}
+<a name="l00037"></a><a class="code" href="classDL_1_1Delegate0.html#a1">00037</a>     <span class="keyword">virtual</span> <a class="code" href="classDL_1_1Delegate0.html#a1">~Delegate0</a>(){}
+<a name="l00038"></a><a class="code" href="classDL_1_1Delegate0.html#a2">00038</a>     <span class="keywordtype">void</span> <a class="code" href="classDL_1_1Delegate0.html#a2">operator()</a>(){ <span class="keywordflow">return</span> this-&gt;<a class="code" href="classDL_1_1Delegate0.html#a3">Invoke</a>();}
+<a name="l00039"></a><a class="code" href="classDL_1_1Delegate0.html#a3">00039</a>     <span class="keywordtype">void</span> <a class="code" href="classDL_1_1Delegate0.html#a3">Invoke</a>()
+00040     {
+00041       (*<a class="code" href="classDL_1_1Delegate0.html#r0">m_class_obj</a>.*<a class="code" href="classDL_1_1Delegate0.html#r1">m_method</a>)();
+00042     }
+00043     };
+00044 <span class="comment">//######################################################################################################</span>
+00045   <span class="keyword">template</span> &lt; <span class="keyword">class</span> ReturnType , <span class="keyword">class</span> ClassType&gt;
+<a name="l00046"></a><a class="code" href="namespaceDL.html#a1">00046</a>     <a class="code" href="namespaceDL.html#a0">DelegateObj</a> <a class="code" href="namespaceDL.html#a1">create_delegate</a>( ClassType &amp; obj , ReturnType(ClassType::*Meth)())
+00047     {
+00048       <span class="keywordflow">return</span> <a class="code" href="namespaceDL.html#a0">DelegateObj</a>(<span class="keyword">new</span> <a class="code" href="classDL_1_1Delegate0.html">Delegate0&lt;ReturnType,ClassType&gt;</a>(&amp;obj,Meth));
+00049     }
+00050 
+00051   <span class="keyword">template</span> &lt; <span class="keyword">class</span> ReturnType , <span class="keyword">class</span> ClassType&gt;
+<a name="l00052"></a><a class="code" href="namespaceDL.html#a2">00052</a>     <a class="code" href="namespaceDL.html#a0">DelegateObj</a> <a class="code" href="namespaceDL.html#a1">create_delegate</a>( ClassType * obj , ReturnType(ClassType::*Meth)())
+00053     {
+00054       <span class="keywordflow">return</span> <a class="code" href="namespaceDL.html#a0">DelegateObj</a>(<span class="keyword">new</span> <a class="code" href="classDL_1_1Delegate0.html">Delegate0&lt;ReturnType,ClassType&gt;</a>(obj,Meth));
+00055     }
+00056 } <span class="comment">// namespace DL</span>
+00057 <span class="preprocessor">#endif // GUARD_DELGATES_DELEGATE0_HPP_INCLUDED</span>
+</pre></div><hr size="1"><address style="align: right;"><small>Generated on Sun Mar 13 12:38:58 2005 for Extended C++ Callback Library by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.4.1 </small></address>
 </body>

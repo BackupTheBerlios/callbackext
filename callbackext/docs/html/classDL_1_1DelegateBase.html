@@ -43,7 +43,9 @@ Inheritance diagram for DL::DelegateBase:<p><center><img src="classDL_1_1Delegat
 
 <tr><td class="memItemLeft" nowrap align="right" valign="top">virtual&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDL_1_1DelegateBase.html#a1">~DelegateBase</a> ()</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDL_1_1DelegateBase.html#a2">Invoke</a> ()=0</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDL_1_1DelegateBase.html#a2">operator()</a> ()=0</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">virtual void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDL_1_1DelegateBase.html#a3">Invoke</a> ()=0</td></tr>
 
 </table>
 <hr><h2>Constructor &amp; Destructor Documentation</h2>
@@ -106,7 +108,7 @@ Definition at line <a class="el" href="DelegateBase_8hpp-source.html#l00029">29<
   </tr>
 </table>
 <hr><h2>Member Function Documentation</h2>
-<a class="anchor" name="a2" doxytag="DL::DelegateBase::Invoke"></a><p>
+<a class="anchor" name="a3" doxytag="DL::DelegateBase::Invoke"></a><p>
 <table class="mdTable" cellpadding="2" cellspacing="0">
   <tr>
     <td class="mdRow">
@@ -132,14 +134,43 @@ Definition at line <a class="el" href="DelegateBase_8hpp-source.html#l00029">29<
 <p>
 
 <p>
-Implemented in <a class="el" href="classDL_1_1Delegate0.html#a2">DL::Delegate0&lt; ReturnType, ClassType &gt;</a>, <a class="el" href="classDL_1_1Delegate1.html#a2">DL::Delegate1&lt; ReturnType, ClassType, Param1 &gt;</a>, <a class="el" href="classDL_1_1Delegate10.html#a2">DL::Delegate10&lt; ReturnType, ClassType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9, Param10 &gt;</a>, <a class="el" href="classDL_1_1Delegate2.html#a2">DL::Delegate2&lt; ReturnType, ClassType, Param1, Param2 &gt;</a>, <a class="el" href="classDL_1_1Delegate3.html#a2">DL::Delegate3&lt; ReturnType, ClassType, Param1, Param2, Param3 &gt;</a>, <a class="el" href="classDL_1_1Delegate4.html#a2">DL::Delegate4&lt; ReturnType, ClassType, Param1, Param2, Param3, Param4 &gt;</a>, <a class="el" href="classDL_1_1Delegate5.html#a2">DL::Delegate5&lt; ReturnType, ClassType, Param1, Param2, Param3, Param4, Param5 &gt;</a>, <a class="el" href="classDL_1_1Delegate6.html#a2">DL::Delegate6&lt; ReturnType, ClassType, Param1, Param2, Param3, Param4, Param5, Param6 &gt;</a>, <a class="el" href="classDL_1_1Delegate7.html#a2">DL::Delegate7&lt; ReturnType, ClassType, Param1, Param2, Param3, Param4, Param5, Param6, Param7 &gt;</a>, <a class="el" href="classDL_1_1Delegate8.html#a2">DL::Delegate8&lt; ReturnType, ClassType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8 &gt;</a>, <a class="el" href="classDL_1_1Delegate9.html#a2">DL::Delegate9&lt; ReturnType, ClassType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9 &gt;</a>, <a class="el" href="classDL_1_1Functor0.html#a2">DL::Functor0</a>, <a class="el" href="classDL_1_1Functor1.html#a2">DL::Functor1&lt; ReturnType, Param1 &gt;</a>, <a class="el" href="classDL_1_1Functor10.html#a2">DL::Functor10&lt; ReturnType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9, Param10 &gt;</a>, <a class="el" href="classDL_1_1Functor2.html#a2">DL::Functor2&lt; ReturnType, Param1, Param2 &gt;</a>, <a class="el" href="classDL_1_1Functor3.html#a2">DL::Functor3&lt; ReturnType, Param1, Param2, Param3 &gt;</a>, <a class="el" href="classDL_1_1Functor4.html#a2">DL::Functor4&lt; ReturnType, Param1, Param2, Param3, Param4 &gt;</a>, <a class="el" href="classDL_1_1Functor5.html#a2">DL::Functor5&lt; ReturnType, Param1, Param2, Param3, Param4, Param5 &gt;</a>, <a class="el" href="classDL_1_1Functor6.html#a2">DL::Functor6&lt; ReturnType, Param1, Param2, Param3, Param4, Param5, Param6 &gt;</a>, <a class="el" href="classDL_1_1Functor7.html#a2">DL::Functor7&lt; ReturnType, Param1, Param2, Param3, Param4, Param5, Param6, Param7 &gt;</a>, <a class="el" href="classDL_1_1Functor8.html#a2">DL::Functor8&lt; ReturnType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8 &gt;</a>, and <a class="el" href="classDL_1_1Functor9.html#a2">DL::Functor9&lt; ReturnType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9 &gt;</a>.
+Implemented in <a class="el" href="classDL_1_1Delegate0.html#a3">DL::Delegate0&lt; ReturnType, ClassType &gt;</a>, <a class="el" href="classDL_1_1Delegate1.html#a4">DL::Delegate1&lt; ReturnType, ClassType, Param1 &gt;</a>, <a class="el" href="classDL_1_1Delegate10.html#a4">DL::Delegate10&lt; ReturnType, ClassType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9, Param10 &gt;</a>, <a class="el" href="classDL_1_1Delegate2.html#a4">DL::Delegate2&lt; ReturnType, ClassType, Param1, Param2 &gt;</a>, <a class="el" href="classDL_1_1Delegate3.html#a4">DL::Delegate3&lt; ReturnType, ClassType, Param1, Param2, Param3 &gt;</a>, <a class="el" href="classDL_1_1Delegate4.html#a4">DL::Delegate4&lt; ReturnType, ClassType, Param1, Param2, Param3, Param4 &gt;</a>, <a class="el" href="classDL_1_1Delegate5.html#a4">DL::Delegate5&lt; ReturnType, ClassType, Param1, Param2, Param3, Param4, Param5 &gt;</a>, <a class="el" href="classDL_1_1Delegate6.html#a4">DL::Delegate6&lt; ReturnType, ClassType, Param1, Param2, Param3, Param4, Param5, Param6 &gt;</a>, <a class="el" href="classDL_1_1Delegate7.html#a4">DL::Delegate7&lt; ReturnType, ClassType, Param1, Param2, Param3, Param4, Param5, Param6, Param7 &gt;</a>, <a class="el" href="classDL_1_1Delegate8.html#a4">DL::Delegate8&lt; ReturnType, ClassType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8 &gt;</a>, <a class="el" href="classDL_1_1Delegate9.html#a4">DL::Delegate9&lt; ReturnType, ClassType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9 &gt;</a>, <a class="el" href="classDL_1_1Functor0.html#a3">DL::Functor0</a>, <a class="el" href="classDL_1_1Functor1.html#a4">DL::Functor1&lt; ReturnType, Param1 &gt;</a>, <a class="el" href="classDL_1_1Functor10.html#a4">DL::Functor10&lt; ReturnType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9, Param10 &gt;</a>, <a class="el" href="classDL_1_1Functor2.html#a4">DL::Functor2&lt; ReturnType, Param1, Param2 &gt;</a>, <a class="el" href="classDL_1_1Functor3.html#a4">DL::Functor3&lt; ReturnType, Param1, Param2, Param3 &gt;</a>, <a class="el" href="classDL_1_1Functor4.html#a4">DL::Functor4&lt; ReturnType, Param1, Param2, Param3, Param4 &gt;</a>, <a class="el" href="classDL_1_1Functor5.html#a4">DL::Functor5&lt; ReturnType, Param1, Param2, Param3, Param4, Param5 &gt;</a>, <a class="el" href="classDL_1_1Functor6.html#a4">DL::Functor6&lt; ReturnType, Param1, Param2, Param3, Param4, Param5, Param6 &gt;</a>, <a class="el" href="classDL_1_1Functor7.html#a4">DL::Functor7&lt; ReturnType, Param1, Param2, Param3, Param4, Param5, Param6, Param7 &gt;</a>, <a class="el" href="classDL_1_1Functor8.html#a4">DL::Functor8&lt; ReturnType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8 &gt;</a>, and <a class="el" href="classDL_1_1Functor9.html#a4">DL::Functor9&lt; ReturnType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9 &gt;</a>.
 <p>
 Referenced by <a class="el" href="Connection_8hpp-source.html#l00079">DL::Connection::emit()</a>.    </td>
   </tr>
 </table>
+<a class="anchor" name="a2" doxytag="DL::DelegateBase::operator()"></a><p>
+<table class="mdTable" cellpadding="2" cellspacing="0">
+  <tr>
+    <td class="mdRow">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td class="md" nowrap valign="top">virtual void DL::DelegateBase::operator()           </td>
+          <td class="md" valign="top">(&nbsp;</td>
+          <td class="mdname1" valign="top" nowrap>          </td>
+          <td class="md" valign="top">&nbsp;)&nbsp;</td>
+          <td class="md" nowrap><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table cellspacing="5" cellpadding="0" border="0">
+  <tr>
+    <td>
+      &nbsp;
+    </td>
+    <td>
+
+<p>
+
+<p>
+Implemented in <a class="el" href="classDL_1_1Delegate0.html#a2">DL::Delegate0&lt; ReturnType, ClassType &gt;</a>, <a class="el" href="classDL_1_1Delegate1.html#a3">DL::Delegate1&lt; ReturnType, ClassType, Param1 &gt;</a>, <a class="el" href="classDL_1_1Delegate10.html#a2">DL::Delegate10&lt; ReturnType, ClassType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9, Param10 &gt;</a>, <a class="el" href="classDL_1_1Delegate2.html#a2">DL::Delegate2&lt; ReturnType, ClassType, Param1, Param2 &gt;</a>, <a class="el" href="classDL_1_1Delegate3.html#a2">DL::Delegate3&lt; ReturnType, ClassType, Param1, Param2, Param3 &gt;</a>, <a class="el" href="classDL_1_1Delegate4.html#a2">DL::Delegate4&lt; ReturnType, ClassType, Param1, Param2, Param3, Param4 &gt;</a>, <a class="el" href="classDL_1_1Delegate5.html#a2">DL::Delegate5&lt; ReturnType, ClassType, Param1, Param2, Param3, Param4, Param5 &gt;</a>, <a class="el" href="classDL_1_1Delegate6.html#a2">DL::Delegate6&lt; ReturnType, ClassType, Param1, Param2, Param3, Param4, Param5, Param6 &gt;</a>, <a class="el" href="classDL_1_1Delegate7.html#a2">DL::Delegate7&lt; ReturnType, ClassType, Param1, Param2, Param3, Param4, Param5, Param6, Param7 &gt;</a>, <a class="el" href="classDL_1_1Delegate8.html#a3">DL::Delegate8&lt; ReturnType, ClassType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8 &gt;</a>, <a class="el" href="classDL_1_1Delegate9.html#a3">DL::Delegate9&lt; ReturnType, ClassType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9 &gt;</a>, <a class="el" href="classDL_1_1Functor0.html#a2">DL::Functor0</a>, <a class="el" href="classDL_1_1Functor1.html#a2">DL::Functor1&lt; ReturnType, Param1 &gt;</a>, <a class="el" href="classDL_1_1Functor10.html#a2">DL::Functor10&lt; ReturnType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9, Param10 &gt;</a>, <a class="el" href="classDL_1_1Functor2.html#a2">DL::Functor2&lt; ReturnType, Param1, Param2 &gt;</a>, <a class="el" href="classDL_1_1Functor3.html#a2">DL::Functor3&lt; ReturnType, Param1, Param2, Param3 &gt;</a>, <a class="el" href="classDL_1_1Functor4.html#a2">DL::Functor4&lt; ReturnType, Param1, Param2, Param3, Param4 &gt;</a>, <a class="el" href="classDL_1_1Functor5.html#a2">DL::Functor5&lt; ReturnType, Param1, Param2, Param3, Param4, Param5 &gt;</a>, <a class="el" href="classDL_1_1Functor6.html#a2">DL::Functor6&lt; ReturnType, Param1, Param2, Param3, Param4, Param5, Param6 &gt;</a>, <a class="el" href="classDL_1_1Functor7.html#a2">DL::Functor7&lt; ReturnType, Param1, Param2, Param3, Param4, Param5, Param6, Param7 &gt;</a>, <a class="el" href="classDL_1_1Functor8.html#a3">DL::Functor8&lt; ReturnType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8 &gt;</a>, and <a class="el" href="classDL_1_1Functor9.html#a3">DL::Functor9&lt; ReturnType, Param1, Param2, Param3, Param4, Param5, Param6, Param7, Param8, Param9 &gt;</a>.    </td>
+  </tr>
+</table>
 <hr>The documentation for this class was generated from the following file:<ul>
 <li>/data/callbackext/DelegateN/<a class="el" href="DelegateBase_8hpp-source.html">DelegateBase.hpp</a></ul>
-<hr size="1"><address style="align: right;"><small>Generated on Sat Mar 12 11:38:11 2005 for Extended C++ Callback Library by&nbsp;
+<hr size="1"><address style="align: right;"><small>Generated on Sun Mar 13 12:39:46 2005 for Extended C++ Callback Library by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.4.1 </small></address>
 </body>

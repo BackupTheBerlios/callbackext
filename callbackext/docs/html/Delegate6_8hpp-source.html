@@ -30,79 +30,87 @@
 00021 <span class="preprocessor">#include "<a class="code" href="DelegateBase_8hpp.html">DelegateBase.hpp</a>"</span>
 00022 
 00023 <span class="keyword">namespace </span>DL 
-00024 {       
-00028         <span class="keyword">template</span> &lt; <span class="keyword">class </span>ReturnType , 
-00029                 <span class="keyword">class </span>ClassType  , 
-00030                 <span class="keyword">class </span>Param1     ,
-00031                 <span class="keyword">class </span>Param2     ,
-00032                 <span class="keyword">class </span>Param3     ,
-00033                 <span class="keyword">class </span>Param4     ,
-00034                 <span class="keyword">class </span>Param5     ,
-00035                 <span class="keyword">class </span>Param6     
-00036                 &gt;
-<a name="l00037"></a><a class="code" href="classDL_1_1Delegate6.html">00037</a>         <span class="keyword">class </span><a class="code" href="classDL_1_1Delegate6.html">Delegate6</a> : <span class="keyword">public</span> <a class="code" href="classDL_1_1DelegateBase.html">DelegateBase</a> 
-00038         {
-<a name="l00039"></a><a class="code" href="classDL_1_1Delegate6.html#r0">00039</a>         ClassType* <a class="code" href="classDL_1_1Delegate6.html#r0">m_class_obj</a>;
-00040         ReturnType (ClassType::*m_method)(Param1,Param2,Param3,Param4,Param5,Param6);
-<a name="l00041"></a><a class="code" href="classDL_1_1Delegate6.html#r2">00041</a>         Param1 <a class="code" href="classDL_1_1Delegate6.html#r2">m_val1</a>;
-<a name="l00042"></a><a class="code" href="classDL_1_1Delegate6.html#r3">00042</a>         Param2 <a class="code" href="classDL_1_1Delegate6.html#r3">m_val2</a>;
-<a name="l00043"></a><a class="code" href="classDL_1_1Delegate6.html#r4">00043</a>         Param3 <a class="code" href="classDL_1_1Delegate6.html#r4">m_val3</a>;
-<a name="l00044"></a><a class="code" href="classDL_1_1Delegate6.html#r5">00044</a>         Param4 <a class="code" href="classDL_1_1Delegate6.html#r5">m_val4</a>;
-<a name="l00045"></a><a class="code" href="classDL_1_1Delegate6.html#r6">00045</a>         Param5 <a class="code" href="classDL_1_1Delegate6.html#r6">m_val5</a>;
-<a name="l00046"></a><a class="code" href="classDL_1_1Delegate6.html#r7">00046</a>         Param6 <a class="code" href="classDL_1_1Delegate6.html#r7">m_val6</a>;
-<a name="l00047"></a><a class="code" href="classDL_1_1Delegate6.html#d0">00047</a>         <a class="code" href="classDL_1_1Delegate6.html#d0">Delegate6</a>(){}
-00048         <span class="keyword">public</span>:
-<a name="l00049"></a><a class="code" href="classDL_1_1Delegate6.html#a0">00049</a>         <a class="code" href="classDL_1_1Delegate6.html#d0">Delegate6</a>(ClassType* class_obj,
-00050                 ReturnType (ClassType::*method)(Param1,Param2,Param3,Param4,Param5,Param6),
-00051                 Param1 val1 = Param1(),
-00052                 Param2 val2 = Param2(),
-00053                 Param3 val3 = Param3(),
-00054                 Param4 val4 = Param4(),
-00055                 Param5 val5 = Param5(),
-00056                 Param6 val6 = Param6()):
-00057                 <a class="code" href="classDL_1_1Delegate6.html#r0">m_class_obj</a>(class_obj), <a class="code" href="classDL_1_1Delegate6.html#r1">m_method</a>(method),
-00058                 <a class="code" href="classDL_1_1Delegate6.html#r2">m_val1</a>(val1),<a class="code" href="classDL_1_1Delegate6.html#r3">m_val2</a>(val2),<a class="code" href="classDL_1_1Delegate6.html#r4">m_val3</a>(val3),
-00059                 <a class="code" href="classDL_1_1Delegate6.html#r5">m_val4</a>(val4),<a class="code" href="classDL_1_1Delegate6.html#r6">m_val5</a>(val5),<a class="code" href="classDL_1_1Delegate6.html#r7">m_val6</a>(val6)
-00060                 {}
-<a name="l00061"></a><a class="code" href="classDL_1_1Delegate6.html#a1">00061</a>         <span class="keyword">virtual</span> <a class="code" href="classDL_1_1Delegate6.html#a1">~Delegate6</a>(){}
-<a name="l00062"></a><a class="code" href="classDL_1_1Delegate6.html#a2">00062</a>         <span class="keywordtype">void</span> <a class="code" href="classDL_1_1Delegate6.html#a2">Invoke</a>()
-00063         {
-00064         (*<a class="code" href="classDL_1_1Delegate6.html#r0">m_class_obj</a>.*<a class="code" href="classDL_1_1Delegate6.html#r1">m_method</a>)(<a class="code" href="classDL_1_1Delegate6.html#r2">m_val1</a>,<a class="code" href="classDL_1_1Delegate6.html#r3">m_val2</a>,<a class="code" href="classDL_1_1Delegate6.html#r4">m_val3</a>,<a class="code" href="classDL_1_1Delegate6.html#r5">m_val4</a>,<a class="code" href="classDL_1_1Delegate6.html#r6">m_val5</a>,<a class="code" href="classDL_1_1Delegate6.html#r7">m_val6</a>);
-00065         }
-<a name="l00066"></a><a class="code" href="classDL_1_1Delegate6.html#a3">00066</a>         <span class="keywordtype">void</span> <a class="code" href="classDL_1_1Delegate6.html#a2">Invoke</a>(Param1 val1,Param2 val2,Param3 val3,Param4 val4,Param5 val5,Param6 val6)
-00067         {
-00068         (*<a class="code" href="classDL_1_1Delegate6.html#r0">m_class_obj</a>.*<a class="code" href="classDL_1_1Delegate6.html#r1">m_method</a>)(val1,val2,val3,val4,val5,val6);
-00069         }
-00070         };
-00071         
-00072         <span class="comment">//######################################################################################################</span>
-00073         <span class="keyword">template</span> &lt; <span class="keyword">class </span>ReturnType , <span class="keyword">class </span>ClassType , <span class="keyword">class </span>Param1  , 
-00074                    <span class="keyword">class </span>Param2     , <span class="keyword">class </span>Param3    , <span class="keyword">class </span>Param4  , 
-00075                    <span class="keyword">class </span>Param5     , <span class="keyword">class </span>Param6    
-00076                  &gt;
-<a name="l00077"></a><a class="code" href="namespaceDL.html#a15">00077</a>         <a class="code" href="namespaceDL.html#a0">DelegateObj</a> <a class="code" href="namespaceDL.html#a1">create_delegate</a>( ClassType &amp; obj , ReturnType(ClassType::*Meth)(Param1,Param2,Param3,Param4,Param5,Param6), 
-00078                                                                 Param1 &amp; param1 , Param2 &amp; param2 , Param3 &amp; param3 ,
-00079                                                                 Param4 &amp; param4 , Param5 &amp; param5 , Param6 &amp; param6 )
-00080         {
-00081         <span class="keywordflow">return</span> <a class="code" href="namespaceDL.html#a0">DelegateObj</a>(<span class="keyword">new</span> <a class="code" href="classDL_1_1Delegate6.html">Delegate6&lt;ReturnType,ClassType,Param1,Param2,Param3,Param4,Param5,Param6&gt;</a>
-00082                 (&amp;obj,Meth,param1,param2,param3,param4,param5,param6));
-00083         }
-00084         
-00085         <span class="keyword">template</span> &lt; <span class="keyword">class </span>ReturnType , <span class="keyword">class </span>ClassType , <span class="keyword">class </span>Param1  , 
-00086                    <span class="keyword">class </span>Param2     , <span class="keyword">class </span>Param3    , <span class="keyword">class </span>Param4  , 
-00087                    <span class="keyword">class </span>Param5     , <span class="keyword">class </span>Param6    
-00088                  &gt;
-<a name="l00089"></a><a class="code" href="namespaceDL.html#a16">00089</a>         <a class="code" href="namespaceDL.html#a0">DelegateObj</a> <a class="code" href="namespaceDL.html#a1">create_delegate</a>( ClassType * obj , ReturnType(ClassType::*Meth)(Param1,Param2,Param3,Param4,Param5,Param6), 
-00090                                                                 Param1 &amp; param1 , Param2 &amp; param2 , Param3 &amp; param3 ,
-00091                                                                 Param4 &amp; param4 , Param5 &amp; param5 , Param6 &amp; param6 )
-00092         {
-00093         <span class="keywordflow">return</span> <a class="code" href="namespaceDL.html#a0">DelegateObj</a>(<span class="keyword">new</span> <a class="code" href="classDL_1_1Delegate6.html">Delegate6&lt;ReturnType,ClassType,Param1,Param2,Param3,Param4,Param5,Param6&gt;</a>
-00094                 (obj,Meth,param1,param2,param3,param4,param5,param6));
-00095         }
-00096         
-00097 } <span class="comment">// namespace DL</span>
-00098 <span class="preprocessor">#endif // GUARD_DELGATES_DELEGATE6_HPP_INCLUDED</span>
-</pre></div><hr size="1"><address style="align: right;"><small>Generated on Sat Mar 12 11:38:09 2005 for Extended C++ Callback Library by&nbsp;
+00024   {
+00028   <span class="keyword">template</span> &lt; <span class="keyword">class </span>ReturnType , 
+00029     <span class="keyword">class </span>ClassType  , 
+00030     <span class="keyword">class </span>Param1     ,
+00031     <span class="keyword">class </span>Param2     ,
+00032     <span class="keyword">class </span>Param3     ,
+00033     <span class="keyword">class </span>Param4     ,
+00034     <span class="keyword">class </span>Param5     ,
+00035     <span class="keyword">class </span>Param6     
+00036     &gt;
+<a name="l00037"></a><a class="code" href="classDL_1_1Delegate6.html">00037</a>   <span class="keyword">class </span><a class="code" href="classDL_1_1Delegate6.html">Delegate6</a> : <span class="keyword">public</span> <a class="code" href="classDL_1_1DelegateBase.html">DelegateBase</a> 
+00038   {
+<a name="l00039"></a><a class="code" href="classDL_1_1Delegate6.html#r0">00039</a>   ClassType* <a class="code" href="classDL_1_1Delegate6.html#r0">m_class_obj</a>;
+00040   ReturnType (ClassType::*m_method)(Param1,Param2,Param3,Param4,Param5,Param6);
+<a name="l00041"></a><a class="code" href="classDL_1_1Delegate6.html#r2">00041</a>   Param1 <a class="code" href="classDL_1_1Delegate6.html#r2">m_val1</a>;
+<a name="l00042"></a><a class="code" href="classDL_1_1Delegate6.html#r3">00042</a>   Param2 <a class="code" href="classDL_1_1Delegate6.html#r3">m_val2</a>;
+<a name="l00043"></a><a class="code" href="classDL_1_1Delegate6.html#r4">00043</a>   Param3 <a class="code" href="classDL_1_1Delegate6.html#r4">m_val3</a>;
+<a name="l00044"></a><a class="code" href="classDL_1_1Delegate6.html#r5">00044</a>   Param4 <a class="code" href="classDL_1_1Delegate6.html#r5">m_val4</a>;
+<a name="l00045"></a><a class="code" href="classDL_1_1Delegate6.html#r6">00045</a>   Param5 <a class="code" href="classDL_1_1Delegate6.html#r6">m_val5</a>;
+<a name="l00046"></a><a class="code" href="classDL_1_1Delegate6.html#r7">00046</a>   Param6 <a class="code" href="classDL_1_1Delegate6.html#r7">m_val6</a>;
+<a name="l00047"></a><a class="code" href="classDL_1_1Delegate6.html#d0">00047</a>   <a class="code" href="classDL_1_1Delegate6.html#d0">Delegate6</a>(){}
+00048   <span class="keyword">public</span>:
+<a name="l00049"></a><a class="code" href="classDL_1_1Delegate6.html#a0">00049</a>   <a class="code" href="classDL_1_1Delegate6.html#d0">Delegate6</a>(ClassType* class_obj,
+00050     ReturnType (ClassType::*method)(Param1,Param2,Param3,Param4,Param5,Param6),
+00051     Param1 val1 = Param1(),
+00052     Param2 val2 = Param2(),
+00053     Param3 val3 = Param3(),
+00054     Param4 val4 = Param4(),
+00055     Param5 val5 = Param5(),
+00056     Param6 val6 = Param6()):
+00057     <a class="code" href="classDL_1_1Delegate6.html#r0">m_class_obj</a>(class_obj), <a class="code" href="classDL_1_1Delegate6.html#r1">m_method</a>(method),
+00058     <a class="code" href="classDL_1_1Delegate6.html#r2">m_val1</a>(val1),<a class="code" href="classDL_1_1Delegate6.html#r3">m_val2</a>(val2),<a class="code" href="classDL_1_1Delegate6.html#r4">m_val3</a>(val3),
+00059     <a class="code" href="classDL_1_1Delegate6.html#r5">m_val4</a>(val4),<a class="code" href="classDL_1_1Delegate6.html#r6">m_val5</a>(val5),<a class="code" href="classDL_1_1Delegate6.html#r7">m_val6</a>(val6)
+00060     {}
+<a name="l00061"></a><a class="code" href="classDL_1_1Delegate6.html#a1">00061</a>   <span class="keyword">virtual</span> <a class="code" href="classDL_1_1Delegate6.html#a1">~Delegate6</a>(){}
+<a name="l00062"></a><a class="code" href="classDL_1_1Delegate6.html#a2">00062</a>   <span class="keywordtype">void</span> <a class="code" href="classDL_1_1Delegate6.html#a2">operator()</a>()
+00063   {
+00064   (*<a class="code" href="classDL_1_1Delegate6.html#r0">m_class_obj</a>.*<a class="code" href="classDL_1_1Delegate6.html#r1">m_method</a>)(<a class="code" href="classDL_1_1Delegate6.html#r2">m_val1</a>,<a class="code" href="classDL_1_1Delegate6.html#r3">m_val2</a>,<a class="code" href="classDL_1_1Delegate6.html#r4">m_val3</a>,<a class="code" href="classDL_1_1Delegate6.html#r5">m_val4</a>,<a class="code" href="classDL_1_1Delegate6.html#r6">m_val5</a>,<a class="code" href="classDL_1_1Delegate6.html#r7">m_val6</a>);
+00065   }
+<a name="l00066"></a><a class="code" href="classDL_1_1Delegate6.html#a3">00066</a>   ReturnType <a class="code" href="classDL_1_1Delegate6.html#a2">operator()</a>(Param1 val1,Param2 val2,Param3 val3,Param4 val4,Param5 val5,Param6 val6)
+00067   {
+00068     <span class="keywordflow">return</span> (*<a class="code" href="classDL_1_1Delegate6.html#r0">m_class_obj</a>.*<a class="code" href="classDL_1_1Delegate6.html#r1">m_method</a>)(val1,val2,val3,val4,val5,val6);
+00069   }
+<a name="l00070"></a><a class="code" href="classDL_1_1Delegate6.html#a4">00070</a>   <span class="keywordtype">void</span> <a class="code" href="classDL_1_1Delegate6.html#a4">Invoke</a>()
+00071   {
+00072   (*<a class="code" href="classDL_1_1Delegate6.html#r0">m_class_obj</a>.*<a class="code" href="classDL_1_1Delegate6.html#r1">m_method</a>)(<a class="code" href="classDL_1_1Delegate6.html#r2">m_val1</a>,<a class="code" href="classDL_1_1Delegate6.html#r3">m_val2</a>,<a class="code" href="classDL_1_1Delegate6.html#r4">m_val3</a>,<a class="code" href="classDL_1_1Delegate6.html#r5">m_val4</a>,<a class="code" href="classDL_1_1Delegate6.html#r6">m_val5</a>,<a class="code" href="classDL_1_1Delegate6.html#r7">m_val6</a>);
+00073   }
+<a name="l00074"></a><a class="code" href="classDL_1_1Delegate6.html#a5">00074</a>   ReturnType <a class="code" href="classDL_1_1Delegate6.html#a4">Invoke</a>(Param1 val1,Param2 val2,Param3 val3,Param4 val4,Param5 val5,Param6 val6)
+00075   {
+00076     <span class="keywordflow">return</span> (*<a class="code" href="classDL_1_1Delegate6.html#r0">m_class_obj</a>.*<a class="code" href="classDL_1_1Delegate6.html#r1">m_method</a>)(val1,val2,val3,val4,val5,val6);
+00077   }
+00078   };
+00079   
+00080   <span class="comment">//######################################################################################################</span>
+00081   <span class="keyword">template</span> &lt; <span class="keyword">class </span>ReturnType , <span class="keyword">class </span>ClassType , <span class="keyword">class </span>Param1  , 
+00082              <span class="keyword">class </span>Param2     , <span class="keyword">class </span>Param3    , <span class="keyword">class </span>Param4  , 
+00083        <span class="keyword">class </span>Param5     , <span class="keyword">class </span>Param6    
+00084      &gt;
+<a name="l00085"></a><a class="code" href="namespaceDL.html#a15">00085</a>   <a class="code" href="namespaceDL.html#a0">DelegateObj</a> <a class="code" href="namespaceDL.html#a1">create_delegate</a>( ClassType &amp; obj , ReturnType(ClassType::*Meth)(Param1,Param2,Param3,Param4,Param5,Param6), 
+00086                 Param1 &amp; param1 , Param2 &amp; param2 , Param3 &amp; param3 ,
+00087                 Param4 &amp; param4 , Param5 &amp; param5 , Param6 &amp; param6 )
+00088   {
+00089   <span class="keywordflow">return</span> <a class="code" href="namespaceDL.html#a0">DelegateObj</a>(<span class="keyword">new</span> <a class="code" href="classDL_1_1Delegate6.html">Delegate6&lt;ReturnType,ClassType,Param1,Param2,Param3,Param4,Param5,Param6&gt;</a>
+00090     (&amp;obj,Meth,param1,param2,param3,param4,param5,param6));
+00091   }
+00092   
+00093   <span class="keyword">template</span> &lt; <span class="keyword">class </span>ReturnType , <span class="keyword">class </span>ClassType , <span class="keyword">class </span>Param1  , 
+00094              <span class="keyword">class </span>Param2     , <span class="keyword">class </span>Param3    , <span class="keyword">class </span>Param4  , 
+00095        <span class="keyword">class </span>Param5     , <span class="keyword">class </span>Param6    
+00096      &gt;
+<a name="l00097"></a><a class="code" href="namespaceDL.html#a16">00097</a>   <a class="code" href="namespaceDL.html#a0">DelegateObj</a> <a class="code" href="namespaceDL.html#a1">create_delegate</a>( ClassType * obj , ReturnType(ClassType::*Meth)(Param1,Param2,Param3,Param4,Param5,Param6), 
+00098                 Param1 &amp; param1 , Param2 &amp; param2 , Param3 &amp; param3 ,
+00099                 Param4 &amp; param4 , Param5 &amp; param5 , Param6 &amp; param6 )
+00100   {
+00101   <span class="keywordflow">return</span> <a class="code" href="namespaceDL.html#a0">DelegateObj</a>(<span class="keyword">new</span> <a class="code" href="classDL_1_1Delegate6.html">Delegate6&lt;ReturnType,ClassType,Param1,Param2,Param3,Param4,Param5,Param6&gt;</a>
+00102     (obj,Meth,param1,param2,param3,param4,param5,param6));
+00103   }
+00104   
+00105 } <span class="comment">// namespace DL</span>
+00106 <span class="preprocessor">#endif // GUARD_DELGATES_DELEGATE6_HPP_INCLUDED</span>
+</pre></div><hr size="1"><address style="align: right;"><small>Generated on Sun Mar 13 12:38:58 2005 for Extended C++ Callback Library by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.4.1 </small></address>
 </body>

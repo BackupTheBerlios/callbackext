@@ -49,6 +49,14 @@ namespace DL
     m_val1(val1),m_val2(val2),m_val3(val3),m_val4(val4)
     {}
   virtual ~Functor4(){}
+  void operator()()
+  {
+    (*m_function)(m_val1,m_val2,m_val3,m_val4);
+  }
+  ReturnType operator()(Param1 val1,Param2 val2,Param3 val3,Param4 val4)
+  {
+   return (*m_function)(val1,val2,val3,val4);
+  }
   void Invoke()
   {
     (*m_function)(m_val1,m_val2,m_val3,m_val4);

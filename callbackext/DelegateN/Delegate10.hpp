@@ -73,13 +73,21 @@ namespace DL
     m_val10(val10)
     {}
   virtual ~Delegate10(){}
+  void operator()()
+  {
+  (*m_class_obj.*m_method)(m_val1,m_val2,m_val3,m_val4,m_val5,m_val6,m_val7,m_val8,m_val9,m_val10);
+  }
+  ReturnType operator()(Param1 val1,Param2 val2,Param3 val3,Param4 val4,Param5 val5,Param6 val6,Param7 val7,Param8 val8,Param9 val9,Param10 val10)
+  {
+    return (*m_class_obj.*m_method)(val1,val2,val3,val4,val5,val6,val7,val8,val9,val10);
+  }
   void Invoke()
   {
   (*m_class_obj.*m_method)(m_val1,m_val2,m_val3,m_val4,m_val5,m_val6,m_val7,m_val8,m_val9,m_val10);
   }
-  void Invoke(Param1 val1,Param2 val2,Param3 val3,Param4 val4,Param5 val5,Param6 val6,Param7 val7,Param8 val8,Param9 val9,Param10 val10)
+  ReturnType Invoke(Param1 val1,Param2 val2,Param3 val3,Param4 val4,Param5 val5,Param6 val6,Param7 val7,Param8 val8,Param9 val9,Param10 val10)
   {
-  (*m_class_obj.*m_method)(val1,val2,val3,val4,val5,val6,val7,val8,val9,val10);
+    return (*m_class_obj.*m_method)(val1,val2,val3,val4,val5,val6,val7,val8,val9,val10);
   }
   };
   //######################################################################################################

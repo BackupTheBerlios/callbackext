@@ -35,6 +35,10 @@ namespace DL
     m_function(function)
     {}
   virtual ~Functor0(){}
+  void operator()()
+  {
+    this->Invoke();
+  }
   void Invoke()
   {
    (*m_function)();

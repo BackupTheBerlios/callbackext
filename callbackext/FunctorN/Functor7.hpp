@@ -22,7 +22,7 @@
 
 namespace DL 
   {
-  /** Functor for 8 Param
+  /** Functor for 7 Param
   *
   */
   template < class ReturnType , 
@@ -60,13 +60,21 @@ namespace DL
     m_val7(val7)
     {}
   virtual ~Functor7(){}
+  void operator()()
+  {
+    (*m_function)(m_val1,m_val2,m_val3,m_val4,m_val5,m_val6,m_val7);
+  }
+  ReturnType operator()(Param1 val1,Param2 val2,Param3 val3,Param4 val4,Param5 val5,Param6 val6,Param7 val7)
+  {
+   return (*m_function)(val1,val2,val3,val4,val5,val6,val7);
+  }
   void Invoke()
   {
     (*m_function)(m_val1,m_val2,m_val3,m_val4,m_val5,m_val6,m_val7);
   }
   ReturnType Invoke(Param1 val1,Param2 val2,Param3 val3,Param4 val4,Param5 val5,Param6 val6,Param7 val7)
   {
-   (*m_function)(val1,val2,val3,val4,val5,val6,val7);
+   return (*m_function)(val1,val2,val3,val4,val5,val6,val7);
   }
   };
   
