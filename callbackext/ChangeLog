@@ -1,0 +1,4 @@
+2005-03-12: Starting ChangeLog with Version 0.0.6
+- added ReturnType Delegate1::operator()(Param1 val1)
+- added void Delegate1::operator()()
+- added void Delegate0::operator()()

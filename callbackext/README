@@ -1,0 +1,16 @@
+Delegate - Extended Callback Library 
+
+Author: Vinzenz Feenstra 
+Email:  evilissimo@users.sourceforge.net
+
+This is an extended callback library. It provides
+diffrent possibilities of usage. 
+
+There are functors for up to 10 parameters.
+There are delegates for up to 10 Parameters, too.
+Easy usage with an overloaded delegate / functor creator
+template function which is overloaded for every case.
+
+There are "containers" like the DelegateList or the 
+Associative.
+
